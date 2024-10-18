@@ -1,0 +1,764 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nav {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  width: 65%;
+}
+.nav .logo h1 {
+  font-size: 1.6rem;
+  margin: 14px 0px;
+  font-weight: 300;
+  display: inline-block;
+  letter-spacing: 6px;
+  color: rgb(134, 185, 255);
+  text-decoration: none;
+}
+.nav ul {
+  list-style: none;
+  float: right;
+}
+.nav ul li {
+  display: inline-block;
+  line-height: 40px;
+}
+.nav ul li a {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: black;
+}
+.nav ul li a:hover {
+  color: #98c4fa;
+}
+.nav ul li .active {
+  color: #008EF6;
+}
+.nav ul li .active:hover {
+  color: #98c4fe;
+}
+
+.menu-btn {
+  display: none;
+  float: right;
+  margin-left: 16px;
+}
+
+#click {
+  float: right;
+  display: none;
+}
+
+#click:checked ~ ul {
+  left: 0%;
+}
+
+.cantenar {
+  max-width: 100%;
+  height: auto;
+  background-image: url(../Vilocity.img/photo-1.jpg);
+  background-position: 0px -216px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid rgb(0, 170, 255);
+}
+.cantenar .header {
+  background-color: rgba(0, 134, 250, 0.2666666667);
+  text-align: center;
+  padding-top: 195px;
+  padding-bottom: 195px;
+}
+.cantenar .header .header-body {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  animation: mymove 1s;
+}
+.cantenar .header .header-body h1 {
+  color: aliceblue;
+  margin: 0px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 3.5rem;
+}
+.cantenar .header .header-body p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #2E9DFF;
+}
+.cantenar .header .header-button {
+  font-weight: 100;
+  padding: 12px 30px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid white;
+  margin: 0px;
+  font-size: 1rem;
+  color: white;
+}
+.cantenar .header .header-button:hover {
+  color: #2E9DFF;
+  border: 1px #2E9DFF solid;
+}
+.cantenar .header .active {
+  background-color: #69B9FF;
+  color: white;
+  border: none;
+  margin-right: 19px;
+}
+.cantenar .header .active:hover {
+  border: none;
+  color: white;
+  background-color: #4c99f7;
+}
+
+@keyframes mymove {
+  0% {
+    top: 200px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.cantenar2 {
+  margin: auto;
+  width: 61%;
+  max-width: 100%;
+  height: auto;
+}
+.cantenar2 .h-primary {
+  color: rgb(75, 74, 74);
+  padding: 50px 0px 0px 0px;
+  text-align: center;
+}
+.cantenar2 .h-primary h1 {
+  font-size: 1.9rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+.cantenar2 .h-primary p {
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: rgb(139, 138, 138);
+}
+.cantenar2 .row {
+  padding: 20px 0px 60px 0px;
+}
+.cantenar2 .row .card1 {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  width: 272px;
+  display: inline-block;
+  border: 1px solid rgba(91, 91, 91, 0.203);
+  border-radius: 12px;
+  color: rgba(95, 94, 94, 0.742);
+  animation: mymove 1s;
+  padding: 8px;
+  margin: 8px;
+}
+.cantenar2 .row .card1 h1 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+.cantenar2 .row .card1 P {
+  font-size: 0.9rem;
+  font-weight: 100;
+  line-height: 30px;
+  color: #859BAE;
+}
+
+.cantenar3 {
+  max-width: 100%;
+  height: auto;
+  background-color: #192024;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px;
+}
+.cantenar3 .h-primary {
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+.cantenar3 .h-primary h1 {
+  font-weight: 200;
+}
+.cantenar3 .row {
+  max-width: 100%;
+  height: auto;
+  padding: 20px 0px 60px 0px;
+  display: flex;
+  margin: auto;
+  width: 63%;
+}
+.cantenar3 .row .card2 {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  font-weight: 200;
+}
+.cantenar3 .row .card2 h1 {
+  font-weight: 200;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.cantenar3 .row .card2 p {
+  padding: 12px;
+  line-height: 30px;
+}
+.cantenar3 .row .card2 img {
+  max-width: 100%;
+  height: auto;
+  width: 420px;
+}
+.cantenar3 .row .card2 .but {
+  padding: 15px 50px;
+  background-color: #192024;
+  color: white;
+  border: 1.3px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cantenar3 .row .card2 .but:hover {
+  border: 1.3px solid #2E9DFF;
+  color: #2E9DFF;
+}
+
+.cantenar4 {
+  margin: auto;
+  width: 60%;
+  padding: 80PX 10PX;
+}
+.cantenar4 .h-primary {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cantenar4 .h-primary h1 {
+  font-size: 1.9rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin: 0px 0px 7px 0px;
+}
+.cantenar4 .h-primary p {
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: rgb(139, 138, 138);
+  margin: 0px 0px 50px 0px;
+}
+.cantenar4 .h-primary .btn {
+  padding: 14px 35px;
+  margin: 0px 4px 10px 4px;
+  background-color: #92A0AD;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: white;
+}
+.cantenar4 .h-primary .btn:hover {
+  background-color: #2E80B6;
+}
+.cantenar4 .row {
+  text-align: center;
+}
+.cantenar4 .row .card3 {
+  max-width: 100%;
+  height: auto;
+}
+.cantenar4 .row .card3 img {
+  width: 900px;
+  height: auto;
+  max-width: 100%;
+}
+.cantenar4 .row .card3 h1 {
+  font-size: 1.9rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+  letter-spacing: 2px;
+  margin: 15px 0px 7px 0px;
+}
+.cantenar4 .row .card3 p {
+  width: 80%;
+  margin: auto;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: rgb(139, 138, 138);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.footer {
+  background-color: #EDEFF2;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 80px solid #383838;
+}
+.footer h2 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+  color: #676770;
+}
+.footer .row {
+  display: flex;
+  margin: auto;
+  width: 65%;
+}
+.footer .row .card4 {
+  width: 33.3333%;
+  padding: 0px 12px;
+}
+.footer .row .card4 p {
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: rgb(139, 138, 138);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+}
+.footer .row .card5 {
+  width: 33.3333%;
+  padding: 0px 12px;
+}
+.footer .row .card5 ul {
+  list-style: none;
+  padding: 0px;
+}
+.footer .row .card5 ul li i {
+  padding-right: 12px;
+  font-size: 1.4rem;
+}
+.footer .row .card5 ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #7394B1;
+  font-size: 16px;
+  font-weight: 100;
+}
+.footer .row .card5 ul li a:hover {
+  color: #2E9DFF;
+}
+
+.hedar {
+  background-image: url(../Vilocity.img/Leaflet_GoogleRoadmap.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.contact-box {
+  margin: auto;
+  width: 60%;
+  padding: 80px 10px;
+  text-align: center;
+}
+.contact-box .h-primary {
+  margin-bottom: 60px;
+}
+.contact-box .h-primary h1 {
+  font-size: 2.2rem;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  letter-spacing: 4px;
+  color: #8A8A91;
+}
+.contact-box .h-primary p {
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin: 0px;
+  letter-spacing: 3px;
+  color: #8A8A91;
+}
+.contact-box .p-primary {
+  margin-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 100;
+  color: cadetblue;
+}
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-box form input {
+  padding: 15px;
+  margin: 12px;
+  border: 1px solid #C5C5C7;
+  border-radius: 5px;
+}
+.contact-box form textarea {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 12px;
+  padding: 15px;
+  height: 150px;
+  border: 1px solid #C5C5C7;
+  border-radius: 5px;
+}
+.contact-box form .btn {
+  background-color: #69B9FF;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.contact-box form .btn:hover {
+  background-color: #0088ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+  }
+  .cantenar {
+    background-image: url(../Vilocity.img/photo-1.jpg);
+    background-position: 0px -105px;
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid rgb(0, 170, 255);
+  }
+  .cantenar2 {
+    margin: auto;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+  }
+  .cantenar2 .row {
+    padding: 20px 0px 60px 0px;
+    display: flex;
+  }
+  .cantenar2 .card1 {
+    text-align: center;
+    max-width: 100%;
+    width: 280px;
+    height: auto;
+    margin: 12px;
+  }
+  .cantenar3 .row {
+    padding: 20px 0px 60px 0px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+  }
+  .contact-box {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav {
+    width: 95%;
+  }
+  .cantenar {
+    background-image: url(../Vilocity.img/photo-1.jpg);
+    background-position: 0px -24px;
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid rgb(0, 170, 255);
+  }
+  .cantenar .header {
+    padding-top: 195px;
+    padding-bottom: 195px;
+  }
+  .cantenar2 {
+    margin: auto;
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+  }
+  .cantenar3 .row {
+    padding: 20px 0px 60px 0px;
+    display: flex;
+    margin: auto;
+    width: 95%;
+  }
+  .cantenar3 .row .card2 h1 {
+    font-size: 1.5rem;
+  }
+  .contact-box {
+    width: 95%;
+  }
+  .footer .row {
+    display: flex;
+    margin: auto;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    margin: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .nav .logo h1 {
+    margin: 14px 40px;
+  }
+  .nav ul {
+    top: -13px;
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    height: 200px;
+    left: -100%;
+    background-color: aqua;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  .nav ul li {
+    display: block;
+    text-align: center;
+    line-height: 60px;
+  }
+  .menu-btn {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    line-height: 70px;
+    margin-right: 50px;
+    font-size: 1.5rem;
+  }
+  #click {
+    display: none;
+  }
+  @keyframes mymove {
+    0% {
+      left: -200px;
+      opacity: 0;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  .cantenar {
+    background-position: right;
+  }
+  .cantenar .header {
+    padding-bottom: 70px;
+  }
+  .cantenar .header .header-body {
+    position: relative;
+    top: -60px;
+  }
+  .cantenar .header .header-body h1 {
+    font-size: 3rem;
+  }
+  .cantenar2 .row {
+    flex-wrap: wrap;
+  }
+  .cantenar2 .row .card1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px;
+    padding: 12px;
+  }
+  .cantenar2 .row .card1 img {
+    width: 140px;
+  }
+  .cantenar2 .row .card1 h1 {
+    margin: 0px;
+  }
+  .cantenar2 .row .card1 P {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 25px;
+    color: #859BAE;
+    margin-bottom: 0;
+  }
+  .cantenar3 .row {
+    width: 95%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0px;
+  }
+  .cantenar3 .row .card2 img {
+    width: 90%;
+    height: auto;
+  }
+  .cantenar3 .row .card2 h1 {
+    font-size: 1.2rem;
+  }
+  .cantenar3 .row .card2 p {
+    padding: 5px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .cantenar3 .row .card2 .but {
+    padding: 15px 50px;
+    background-color: #192024;
+    color: white;
+    border: 1.3px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .cantenar4 {
+    margin: auto;
+    width: 90%;
+    padding: 80PX 10PX;
+  }
+  .footer .row {
+    width: 95%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer .row .card4 {
+    width: 95%;
+    padding: 0px 12px;
+  }
+  .footer .row .card5 {
+    width: 95%;
+    padding: 0px 12px;
+  }
+  .contact-box {
+    padding: 65px 7px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav .logo h1 {
+    margin: 13px 16px;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+  .menu-btn {
+    line-height: 56px;
+    margin-right: 16px;
+    font-size: 1.5rem;
+  }
+  .nav ul {
+    top: 0px;
+    width: 100%;
+    height: 110px;
+    left: -100%;
+  }
+  .nav ul li {
+    line-height: 50px;
+  }
+  .cantenar {
+    background-position: -175px 0px;
+  }
+  .cantenar .header {
+    padding-top: 100px;
+    padding-bottom: 26px;
+  }
+  .cantenar .header .active {
+    margin: 19px 0px;
+  }
+  .cantenar .header .header-body {
+    margin: 12px;
+    padding: 0px;
+  }
+  .cantenar .header .header-body h1 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 64px;
+  }
+  .cantenar .header .header-body p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2E9DFF;
+  }
+  .cantenar2 .h-primary p {
+    margin: 0px;
+    line-height: 34px;
+    padding: 0px 10px 20px 10px;
+    font-size: 1.1rem;
+  }
+  .cantenar2 .row {
+    padding: 20px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cantenar2 .row .card1 {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 15px;
+  }
+  .cantenar2 .row .card1 P {
+    padding: 12px;
+    margin: 0px;
+  }
+  .cantenar2 .row .card1 img {
+    width: 110px;
+  }
+  .cantenar3 .row {
+    width: 96%;
+    flex-direction: column;
+  }
+  .cantenar3 .row .card2 {
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 30px;
+  }
+  .cantenar3 .row .card2 img {
+    max-width: 100%;
+    width: 270px;
+    margin: 25px 0px;
+    height: auto;
+  }
+  .cantenar3 .row .card2 p {
+    padding: 5px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .cantenar3 .row .card2 .but {
+    padding: 15px 50px;
+    font-size: 0.8rem;
+  }
+  .footer .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .footer .row .card4 {
+    width: 90%;
+    padding: 0px 12px;
+  }
+  .footer .row .card5 {
+    width: 90%;
+    padding: 0px 12px;
+  }
+  .contact-box {
+    width: 95%;
+    padding: 65px 7px;
+  }
+  .contact-box .h-primary {
+    margin-bottom: 40px;
+  }
+  .contact-box .h-primary h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  .contact-box form textarea {
+    height: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */

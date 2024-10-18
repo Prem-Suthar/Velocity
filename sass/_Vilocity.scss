@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@mixin fontsize {
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin h-primary {
+    color: aliceblue;
+    margin: 0px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+@mixin h-primary2 {
+    font-size: 1.9rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+@mixin p-primary {
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+@mixin p-primary2 {
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: rgb(139, 138, 138);
+}
+
+@mixin width {
+    width: 33.3333%;
+    padding: 0px 12px;
+}
+
+@mixin h2-primary {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+    color: #676770;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+// this is a Nevbar
+.nav {
+    @include fontsize;
+    margin: auto;
+    width: 65%;
+
+    .logo h1 {
+        font-size: 1.6rem;
+        margin: 14px 0px;
+        font-weight: 300;
+        display: inline-block;
+        letter-spacing: 6px;
+        color: rgb(134, 185, 255);
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        float: right;
+
+        li {
+            display: inline-block;
+            line-height: 40px;
+
+            a {
+                text-decoration: none;
+                padding: 8px 20px;
+                color: black;
+
+                &:hover {
+                    color: #98c4fa;
+                }
+
+            }
+
+            .active {
+                color: #008EF6;
+
+                &:hover {
+                    color: #98c4fe;
+                }
+            }
+        }
+
+    }
+}
+
+//  this is a 
+.menu-btn {
+    display: none;
+    float: right;
+    margin-left: 16px;
+
+}
+
+#click {
+    float: right;
+    display: none;
+}
+
+#click:checked~ul {
+    left: 0%;
+}
+
+//this is a cantenar and header, button and active
+.cantenar {
+    @include fontsize;
+    background-image: url(../Vilocity.img/photo-1.jpg);
+    background-position: 0px -216px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid rgb(0, 170, 255);
+
+    .header {
+        background-color: #0086fa44;
+        text-align: center;
+        padding-top: 195px;
+        padding-bottom: 195px;
+
+        .header-body {
+            @include fontsize;
+            position: relative;
+            animation: mymove 1s;
+
+            h1 {
+                @include h-primary;
+                font-size: 3.5rem;
+            }
+
+            p {
+
+                font-size: 1.6rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: #2E9DFF;
+            }
+
+        }
+
+        .header-button {
+            font-weight: 100;
+            padding: 12px 30px;
+            background: none;
+            border-radius: 4px;
+            border: 1px solid white;
+            margin: 0px;
+            font-size: 1rem;
+
+            color: white;
+
+            &:hover {
+                color: #2E9DFF;
+                border: 1px #2E9DFF solid;
+
+            }
+        }
+
+        .active {
+            background-color: #69B9FF;
+            color: white;
+            border: none;
+            margin-right: 19px;
+
+            &:hover {
+                border: none;
+                color: white;
+                background-color: #4c99f7;
+            }
+        }
+
+    }
+}
+
+@keyframes mymove {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+//this is a cantenar2 and card1
+.cantenar2 {
+    margin: auto;
+    width: 61%;
+    @include fontsize;
+
+
+    .h-primary {
+        color: rgb(75, 74, 74);
+        padding: 50px 0px 0px 0px;
+        text-align: center;
+
+        h1 {
+            @include h-primary2;
+        }
+
+        p {
+            @include p-primary;
+            @include p-primary2;
+        }
+
+    }
+
+    .row {
+        padding: 20px 0px 60px 0px;
+
+        .card1 {
+            @include fontsize;
+            text-align: center;
+            width: 272px;
+            display: inline-block;
+            border: 1px solid rgba(91, 91, 91, 0.203);
+            border-radius: 12px;
+            color: rgba(95, 94, 94, 0.742);
+            animation: mymove 1s;
+            padding: 8px;
+            margin: 8px;
+
+            h1 {
+                font-size: 1.4rem;
+                font-weight: 300;
+                letter-spacing: 5px;
+            }
+
+            P {
+                font-size: .9rem;
+                font-weight: 100;
+                line-height: 30px;
+                color: #859BAE;
+            }
+        }
+    }
+
+}
+
+//this is a cantenar3 and card2, button
+.cantenar3 {
+    @include fontsize;
+    background-color: #192024;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+
+
+    .h-primary {
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 30px;
+        letter-spacing: 4px;
+
+        h1 {
+            font-weight: 200;
+        }
+
+    }
+
+    .row {
+        @include fontsize;
+        padding: 20px 0px 60px 0px;
+        display: flex;
+        margin: auto;
+        width: 63%;
+
+        .card2 {
+            @include fontsize;
+            text-align: center;
+            font-weight: 200;
+
+            h1 {
+                font-weight: 200;
+                font-size: 25px;
+                letter-spacing: 5px;
+            }
+
+            p {
+                padding: 12px;
+                line-height: 30px;
+            }
+
+            img {
+                @include fontsize;
+                width: 420px;
+
+            }
+
+            .but {
+                padding: 15px 50px;
+                background-color: #192024;
+                color: white;
+                border: 1.3px solid white;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    border: 1.3px solid #2E9DFF;
+                    color: #2E9DFF;
+                }
+
+            }
+
+        }
+    }
+}
+
+//this is a cantenar4 and card3, button onclick
+.cantenar4 {
+    margin: auto;
+    width: 60%;
+    padding: 80PX 10PX;
+
+    .h-primary {
+        text-align: center;
+        margin-bottom: 40px;
+
+        h1 {
+            @include h-primary2;
+            margin: 0px 0px 7px 0px;
+        }
+
+        p {
+            @include p-primary;
+            @include p-primary2;
+            margin: 0px 0px 50px 0px;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            margin: 0px 4px 10px 4px;
+            background-color: #92A0AD;
+            border: none;
+            border-radius: 5px;
+            font-size: .8rem;
+            font-weight: 100;
+            letter-spacing: 3px;
+            color: white;
+
+            &:hover {
+                background-color: #2E80B6;
+            }
+
+        }
+
+
+    }
+
+    .row {
+        text-align: center;
+
+        .card3 {
+            @include fontsize;
+
+
+            img {
+                width: 900px;
+                height: auto;
+                max-width: 100%;
+            }
+
+            h1 {
+                @include h-primary2;
+                letter-spacing: 2px;
+                margin: 15px 0px 7px 0px;
+            }
+
+            p {
+                width: 80%;
+                margin: auto;
+                @include p-primary2;
+                font-size: 16px;
+                font-weight: 100;
+                line-height: 25px;
+            }
+
+        }
+    }
+}
+
+//this is a footer and card4, li 
+.footer {
+    background-color: #EDEFF2;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 80px solid #383838;
+
+    h2 {
+        @include h2-primary();
+    }
+
+    .row {
+        display: flex;
+        margin: auto;
+        width: 65%;
+
+        .card4 {
+            @include width;
+
+            p {
+                @include p-primary2;
+                font-size: 16px;
+                font-weight: 100;
+                line-height: 25px;
+            }
+
+        }
+
+        .card5 {
+            @include width;
+
+            ul {
+                list-style: none;
+                padding: 0px;
+
+                li {
+                    i {
+                        padding-right: 12px;
+                        font-size: 1.4rem;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1.1rem;
+                        color: #7394B1;
+                        font-size: 16px;
+                        font-weight: 100;
+
+                        &:hover {
+                            color: #2E9DFF;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.hedar {
+    background-image: url(../Vilocity.img/Leaflet_GoogleRoadmap.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+.contact-box {
+    margin: auto;
+    width: 60%;
+    padding: 80px 10px;
+    text-align: center;
+
+    .h-primary {
+        margin-bottom: 60px;
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 200;
+            margin-top: 0px;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+            color: #8A8A91;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 100;
+            margin: 0px;
+            letter-spacing: 3px;
+            color: #8A8A91;
+        }
+    }
+    .p-primary {
+        margin-bottom: 50px;
+        font-size: 1rem;
+        font-weight: 100;
+        color: cadetblue;
+
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        input{
+            padding: 15px ;
+            margin: 12px;
+            border:1px solid #C5C5C7;
+            border-radius: 5px;
+        }
+        textarea{
+            font-size: 1.2rem;
+            font-weight: 200;
+            margin: 12px;
+            padding: 15px;
+            height: 150px;
+            border:1px solid #C5C5C7;
+            border-radius: 5px;
+        }
+        .btn{
+            background-color: #69B9FF;
+            color: white;
+            font-size: 1rem;
+            font-weight: 100;
+            letter-spacing: 3px;
+            cursor: pointer;
+            &:hover{
+                background-color: #0088ff;
+            }
+        }
+    }
+}
