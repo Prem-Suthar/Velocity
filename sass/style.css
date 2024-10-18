@@ -156,6 +156,7 @@ body {
 }
 .cantenar2 .row {
   padding: 20px 0px 60px 0px;
+  display: flex;
 }
 .cantenar2 .row .card1 {
   max-width: 100%;

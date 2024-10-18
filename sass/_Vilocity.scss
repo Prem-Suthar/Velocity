@@ -221,6 +221,7 @@ body {
 
     .row {
         padding: 20px 0px 60px 0px;
+        display: flex;
 
         .card1 {
             @include fontsize;
